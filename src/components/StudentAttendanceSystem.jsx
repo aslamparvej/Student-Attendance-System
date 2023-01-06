@@ -14,10 +14,10 @@ const StudentAttendanceSystem = () => {
   // Add a new student to the list of present students
   const checkIn = (rollNumber, name) => {
     setStudents([...students, { rollNumber, name, checkInTime: new Date() }]);
-  }
+  };
 
   // Update the check-out time for a student
-  const checkOut = (rollNumber)=> {
+  const checkOut = (rollNumber) => {
     setStudents(
       students.map((student) => {
         if (student.rollNumber === rollNumber) {
@@ -26,7 +26,7 @@ const StudentAttendanceSystem = () => {
         return student;
       })
     );
-  }
+  };
 
   return (
     <div className="form-container">
@@ -47,9 +47,9 @@ const StudentAttendanceSystem = () => {
         <button type="submit">Check In</button>
       </form>
       <h2>
-      There are currently {numberOfStudents} students present in the school.
+        There are currently {numberOfStudents} students present in the school.
       </h2>
-      <table border={2}>
+      <table>
         <thead>
           <tr>
             <th>Name</th>
@@ -59,30 +59,28 @@ const StudentAttendanceSystem = () => {
             <th>Check out</th>
           </tr>
         </thead>
-        <tbody>
-          {students.map((student) => (
-            <tr key={student.rollNumber}>
-              <td>{student.name}</td>
-              <td>{student.rollNumber}</td>
-              <td>
-                <span> {student.checkInTime.toLocaleTimeString()}</span>
-              </td>
-              <td>
-                <span>
-                  {" "}
-                  {student.checkOutTime
-                    ? student.checkOutTime.toLocaleTimeString()
-                    : "Present"}
-                </span>
-              </td>
-              <td>
-                <button onClick={() => checkOut(student.rollNumber)}>
-                  Check Out
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
+        {students.map((student) => (
+          <tr key={student.rollNumber}>
+            <td>{student.name}</td>
+            <td>{student.rollNumber}</td>
+            <td>
+              <span> {student.checkInTime.toLocaleTimeString()}</span>
+            </td>
+            <td>
+              <span>
+                {" "}
+                {student.checkOutTime
+                  ? student.checkOutTime.toLocaleTimeString()
+                  : "Present"}
+              </span>
+            </td>
+            <td>
+              <button onClick={() => checkOut(student.rollNumber)}>
+                Check Out
+              </button>
+            </td>
+          </tr>
+        ))}
       </table>
     </div>
   );
