@@ -1,14 +1,41 @@
+/* ************ Google Fonts :: Begins ************ */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* ************ Google Fonts :: Begins ************ */
+
+/* ************ Base Style :: Begins ************ */
+:root{
+  --primary-color: #4b56d2;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
 body{
   background-color: #F1F6F5;
   font-family: sans-serif;
 }
 h1{
   color: #4B56D2;
-  text-align: center;
   font-size: 3rem;
   font-weight: 600;
 }
 h3{
   font-size: 1.5rem;
-  text-align: center;
 }
+/* ul{} */
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/* ************ Base Style :: Ends ************ */
+
+/* ************ Module Style :: Begins ************ */
+.app-container{
+  width: 100vw;
+  height: 100vh;
+}
+/* ************ Module Style :: Ends ************ */
