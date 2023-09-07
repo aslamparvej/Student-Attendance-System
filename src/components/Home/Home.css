@@ -1,0 +1,43 @@
+.home-container{
+    width: 100%;
+    height: calc(100% - 4rem);
+    display: flex;
+}
+.home-container-left{
+    width: 20%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #fff;
+}
+.home-container-right{
+    width: calc(100% - 20%);
+    height: 100%;
+    padding: 2rem;
+}
+.stats-container {
+    margin-block: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.card{
+    width: calc(95% / 4);
+    height: 5rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.card-xl{
+    width: calc(95% / 4);
+    height: calc(5rem * 5);
+}
+.w-2x{
+    width: calc(95% / 2);
+}
+.graph-stats-container{
+    margin-block: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}

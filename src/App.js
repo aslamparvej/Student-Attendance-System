@@ -1,14 +1,23 @@
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
+import NavBar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
 import StudentAttendanceSystem from './components/StudentAttendanceSystem';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Student Attendance System</h1>
-      <h3>{new Date().toLocaleDateString()}</h3>
-      <StudentAttendanceSystem />
+    <div className="app-container">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/students" element={<StudentAttendanceSystem />}/>
+        
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
