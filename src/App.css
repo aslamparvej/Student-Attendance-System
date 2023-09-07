@@ -31,6 +31,9 @@ li{
 a{
   text-decoration: none;
 }
+p {
+  font-size: 14px;
+}
 /* ************ Base Style :: Ends ************ */
 
 /* ************ Module Style :: Begins ************ */
