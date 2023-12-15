@@ -1,19 +1,22 @@
-.home-container{
+.home-container {
     width: 100%;
     height: calc(100% - 4rem);
     display: flex;
 }
-.home-container-left{
+
+.home-container-left {
     width: 20%;
     height: 100%;
     padding: 2rem;
     background-color: #fff;
 }
-.home-container-right{
+
+.home-container-right {
     width: calc(100% - 20%);
     height: 100%;
     padding: 2rem;
 }
+
 .stats-container {
     margin-block: 2rem;
     display: flex;
@@ -21,20 +24,59 @@
     gap: 10px;
     justify-content: space-between;
 }
-.card{
+
+.card {
     width: calc(95% / 4);
     height: 5rem;
     border-radius: 5px;
     background-color: #fff;
 }
-.card-xl{
+
+.card .card-body {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.card-xl .card-body {
+    padding: 1rem;
+}
+
+.card-xl {
     width: calc(95% / 4);
     height: calc(5rem * 5);
 }
-.w-2x{
+
+.card-body-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-body-text {}
+
+.card-body-value {
+    color: #000000bd;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-body-value  a{
+    color: #000000bd;
+}
+.card-body-value sup{
+    font-size: 1rem;
+    color: #40e140;
+    margin-left: 5px;
+}
+.w-2x {
     width: calc(95% / 2);
 }
-.graph-stats-container{
+
+.graph-stats-container {
     margin-block: 2rem;
     display: flex;
     flex-wrap: wrap;
