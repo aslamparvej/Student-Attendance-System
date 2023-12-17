@@ -1,41 +1,137 @@
 /* ************ Google Fonts :: Begins ************ */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap");
 /* ************ Google Fonts :: Begins ************ */
 
 /* ************ Base Style :: Begins ************ */
-:root{
+:root {
   --primary-color: #4b56d2;
+  ----FONT-COLOR: #333333;
+
+  --PRIMARY-BORDER: 1px solid #dedede;
+  --border-radius-sm: 5px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 1rem;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-body{
-  background-color: #F1F6F5;
+body {
+  background-color: #f1f6f5;
   font-family: sans-serif;
 }
-h1{
-  color: #4B56D2;
+h1 {
+  color: #4b56d2;
   font-size: 3rem;
   font-weight: 600;
 }
-h3{
+h3 {
   font-size: 1.5rem;
 }
 /* ul{} */
-li{
+li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
+p {
+  font-size: 14px;
+}
+/* -------- Form element :: Begins --------- */
+
+/* -------- Form element :: Ends --------- */
+
 /* ************ Base Style :: Ends ************ */
 
 /* ************ Module Style :: Begins ************ */
-.app-container{
+.app-container {
   width: 100vw;
   height: 100vh;
 }
 /* ************ Module Style :: Ends ************ */
+
+/* ************ Components Style :: Begins ************ */
+.custom-btn {
+  font-size: 14px;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+.custom-primary-btn {
+  color: #fff;
+  background: var(--primary-color);
+}
+.custom-black-btn {
+  color: #fff;
+  background: #000;
+}
+.custom-black-btn:hover {
+  background: #171717;
+}
+.custom-btn a {
+  color: #fff;
+}
+
+/* ----------- Heading Components :: Begins ----------- */
+.custom-heading-1 {
+  color: var(--FONT-COLOR);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-block: 1rem;
+}
+.custom-heading-2 {
+  color: var(--FONT-COLOR);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.custom-heading-3 {
+  color: var(--FONT-COLOR);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-block: 1rem;
+}
+.custom-heading-4 {
+  color: var(--FONT-COLOR);
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-block: 1rem;
+}
+/* ----------- Heading Components :: Ends ----------- */
+
+/* ----------- Form Components :: Begins ----------- */
+.custom-form {
+  width: 60%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.custom-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.custom-input-label {
+  color: var(----FONT-COLOR);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.custom-input-input {
+  font-size: 14px;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-sm);
+  border: var(--PRIMARY-BORDER);
+}
+.custom-input-input:focus-visible {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+/* ----------- Form Components :: Ends ----------- */
+
+/* ************ Components Style :: Ends ************ */
