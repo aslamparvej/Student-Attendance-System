@@ -1,0 +1,13 @@
+.students-details-container {
+  height: calc(100% - 4rem);
+  width: 60%;
+  margin: 0 auto;
+}
+.students-details-container .custom-heading-2{
+  text-align: center;
+  padding-top: 2rem;
+}
+.add-new-student-link {
+  margin-block: 1rem;
+  text-align: end;
+}

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import "./StudentAttendanceSystem.css";
+// import "./StudentAttendanceSystem.css";
+
+import ModalForm from "./UI/ModalForm";
 
 const StudentAttendanceSystem = () => {
   // Initialize the list of present students and numberOfStudent
@@ -82,6 +84,7 @@ const StudentAttendanceSystem = () => {
           </tr>
         ))}
       </table>
+      <ModalForm />
     </div>
   );
 };
